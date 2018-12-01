@@ -232,7 +232,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/30/1111/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="laizetao">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -321,22 +321,17 @@
 
       
         
-          
-            <h1 id="第一次周报"><a href="#第一次周报" class="headerlink" title="第一次周报"></a>第一次周报</h1><p>1.本周学习方向：了解前端开发、算法</p>
-<p>2.学习参考：<a href="https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/10009024?fr=aladdin" title="前端开发" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/10009024?fr=aladdin</a><br><a href="https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025?fr=aladdin" title="算法" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025?fr=aladdin</a></p>
-<p>3.总结：前端开发基础为网页制作，随后进阶为运用HTML，CSS及JavaScrip使网页更加美观，交互效果显著，功能更加强大。前端开发师主要将公司的要求与技术结合，做出能够吸引顾客，符合公司要求的成品，前端开发为<br>顾客和公司之间搭建桥梁，不仅为顾客带来服务，也可以将顾客的反馈给予公司。</p>
-<p>而算法只要是在编写程序的一种思路，要考虑到算法能否实现还要考虑时间和空间复杂性，算法要有很多的数学思维，因为要运用有些数学方法来为程序构思。</p>
-<p>4.LeetCode</p>
-<p>题目1代码：网上的（emmm）<a href="https://paste.ubuntu.com/p/xWDHXnyfVj/" target="_blank" rel="noopener">https://paste.ubuntu.com/p/xWDHXnyfVj/</a></p>
-<p>我的：<a href="https://paste.ubuntu.com/p/C26wjdzfgZ/（还有一点问题）" target="_blank" rel="noopener">https://paste.ubuntu.com/p/C26wjdzfgZ/（还有一点问题）</a></p>
-<p>思考：对于这次作业没有get到那个点，他提示原地算法，然后我就用条件控制，然后思路有问题无法实现开头数字重复删除的效果，也没有考虑到数组大小为0的情况。需要提高自己的编程思维。</p>
-<p>5.下周进度</p>
-<p>明确实验室的研发方向。我还是比较喜欢算法。。。。</p>
-
-          
+          <h1 id="第一次周报"><a href="#第一次周报" class="headerlink" title="第一次周报"></a>第一次周报</h1><p>1.本周学习方向：了解前端开发、算法<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/30/1111/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -383,7 +378,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/0201/11/30/leetcode1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="laizetao">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -472,62 +467,17 @@
 
       
         
-          
-            <p>#从排序数组中删除重复项#<br>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
-<p>我的（有点长）：</p>
-<pre><code>int removeDuplicates(int* nums, int numsSize){
-int x=0,a,b,len=0,flag=0;
-for(x=0;x&lt;=numsSize-flag;x++)
-{
-    if(nums[0]==nums[1])
-    {
-        for(b=x;b&lt;=numsSize-1-flag;b++)
-        {
-            nums[b]=nums[b+1];
-        }
-        flag=flag+1;
-    }
-    else 
-    {
-        for(a=x+1;a&lt;=numsSize-flag;a++)
-    {
-        if(nums[a]==nums[x])
-        {
-            for(b=x+1;b&lt;=numsSize-1;b++)
-            {
-                nums[b]=nums[b+1];
-            }
-            flag=flag+1;
-            x=0;
-        }
-    }
-    }
-}
-len=numsSize-flag;
-return len;}
-</code></pre><p>参考的</p>
-<pre><code>int removeDuplicates(int* nums, int numsSize) {
-
- int pre = 0, cur = 0;
- if (numsSize == 0)
-    return 0;
-while (cur &lt; numsSize)
-{
-    if (nums[pre] == nums[cur])
-    {
-        cur++;
-    }
-    else
-    {
-        nums[++pre] = nums[cur++];
-    }
-}
-return pre + 1;}
-</code></pre>
-          
+          <p>#从排序数组中删除重复项#<br>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/0201/11/30/leetcode1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -593,7 +543,7 @@ return pre + 1;}
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">laizetao</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -667,7 +617,7 @@ return pre + 1;}
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">laizetao</span>
 
   
 </div>

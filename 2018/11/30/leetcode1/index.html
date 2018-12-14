@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="#从排序数组中删除重复项#参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
+<meta name="description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
 <meta name="keywords" content="c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode">
 <meta property="og:url" content="http://yoursite.com/2018/11/30/leetcode1/index.html">
 <meta property="og:site_name" content="LaiZT">
-<meta property="og:description" content="#从排序数组中删除重复项#参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
+<meta property="og:description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-01T02:24:45.618Z">
+<meta property="og:updated_time" content="2018-12-13T10:10:55.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode">
-<meta name="twitter:description" content="#从排序数组中删除重复项#参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
+<meta name="twitter:description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
 
 
 
@@ -322,7 +322,7 @@
       
 
       
-        <p>#从排序数组中删除重复项#<br>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，<a id="more"></a>然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
+        <h1 id="从排序数组中删除重复项"><a href="#从排序数组中删除重复项" class="headerlink" title="从排序数组中删除重复项"></a>从排序数组中删除重复项</h1><p>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，<a id="more"></a>然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
 <p>我的（有点长）：</p>
 <pre><code>int removeDuplicates(int* nums, int numsSize){
 int x=0,a,b,len=0,flag=0;
@@ -462,8 +462,17 @@ return pre + 1;}
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -478,7 +487,7 @@ return pre + 1;}
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -523,6 +532,22 @@ return pre + 1;}
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从排序数组中删除重复项"><span class="nav-number">1.</span> <span class="nav-text">从排序数组中删除重复项</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

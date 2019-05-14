@@ -16,7 +16,7 @@
 <meta property="og:description" content="参考的pre用于计算和计数">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-05-14T15:02:49.350Z">
+<meta property="og:updated_time" content="2019-05-14T15:04:29.034Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从排序数组中删除重复项">
 <meta name="twitter:description" content="参考的pre用于计算和计数">
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 336 个字)
+                    2 分钟 读完 (大约 335 个字)
                 </span>
                 
                 
@@ -168,7 +168,7 @@
             
         </h1>
         <div class="content">
-            <p>参考的pre用于计算和计数<a id="more"></a>，首先它遇到相同的数进行下次比较，<!-- more -->然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
+            <p>参考的pre用于计算和计数<a id="more"></a>，首先它遇到相同的数进行下次比较，然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
 <p>我的（有点长）：</p>
 <pre><code>int removeDuplicates(int* nums, int numsSize){
 int x=0,a,b,len=0,flag=0;

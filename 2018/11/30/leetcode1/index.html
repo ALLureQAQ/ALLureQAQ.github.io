@@ -2,24 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>leetcode - LaiZT</title>
+<title>从排序数组中删除重复项 - LaiZT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
-<meta name="keywords" content="c">
+    <meta name="description" content="参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度">
+<meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode">
+<meta property="og:title" content="从排序数组中删除重复项">
 <meta property="og:url" content="http://yoursite.com/2018/11/30/leetcode1/index.html">
 <meta property="og:site_name" content="LaiZT">
-<meta property="og:description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
+<meta property="og:description" content="参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2018-12-13T10:10:55.239Z">
+<meta property="og:updated_time" content="2019-05-14T14:46:28.298Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode">
-<meta name="twitter:description" content="从排序数组中删除重复项参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，">
+<meta name="twitter:title" content="从排序数组中删除重复项">
+<meta name="twitter:description" content="参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -94,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="leetcode" height="28">
+                <img src="/images/logo.svg" alt="从排序数组中删除重复项" height="28">
             
             </a>
         </div>
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 346 个字)
+                    2 分钟 读完 (大约 336 个字)
                 </span>
                 
                 
@@ -164,11 +164,12 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                leetcode
+                从排序数组中删除重复项
             
         </h1>
         <div class="content">
-            <h1 id="从排序数组中删除重复项"><a href="#从排序数组中删除重复项" class="headerlink" title="从排序数组中删除重复项"></a>从排序数组中删除重复项</h1><p>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，<a id="more"></a>然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
+            <a id="more"></a>
+<p>参考的pre用于计算和计数，首先它遇到相同的数进行下次比较，<!-- more -->然后直至遇到不同的数，开始使用原地算法覆盖之前相同的数字达到删除效果，同时进行计数。pre最后要加1。我的算法在遇到开头多次重复的数字时，会陷入死循环，在我添加判断用于对付这种情况时，开头的循环无法同时满足两种情况，怎么改都无法实现（很难受）。<br>我的思路为比较前后两个数，如果相同则进行原地算法进行，运用定义的一个数记删除了几次，然后原长度-定义的数=输出，在遇到开头相同的数字出现了问题，无法平衡循环和计数的矛盾。</p>
 <p>我的（有点长）：</p>
 <pre><code>int removeDuplicates(int* nums, int numsSize){
 int x=0,a,b,len=0,flag=0;
@@ -225,7 +226,7 @@ return pre + 1;}
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/c/">c</a>
+                    <a class="has-link-grey -link" href="/tags/leetcode/">leetcode</a>
                 </div>
             </div>
         </div>
@@ -324,7 +325,7 @@ return pre + 1;}
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        3
                     </p>
                 </div>
             </div>
@@ -334,7 +335,7 @@ return pre + 1;}
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        4
                     </p>
                 </div>
             </div>
@@ -437,7 +438,15 @@ return pre + 1;}
                 <span class="level-item">周报</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">6</span>
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/学习/">
+            <span class="level-start">
+                <span class="level-item">学习</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/解题思路/">
@@ -459,7 +468,7 @@ return pre + 1;}
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/c/" style="font-size: 20px;">c</a>
+        <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/c/" style="font-size: 15px;">c</a> <a href="/tags/leetcode/" style="font-size: 20px;">leetcode</a>
     </div>
 </div>
 
@@ -476,18 +485,18 @@ return pre + 1;}
         
         <article class="media">
             
-            <a href="/2019/05/03/DAY1/" class="media-left">
+            <a href="/2019/05/14/DAY1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="第六次周报">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY1">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T07:15:00.000Z">2019-05-03</time></div>
-                    <a href="/2019/05/03/DAY1/" class="has-link-black-ter is-size-6">第六次周报</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:15:00.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/DAY1/" class="has-link-black-ter is-size-6">DaY1</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/周报/">周报</a>
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
                 </div>
             </div>
@@ -641,6 +650,13 @@ return pre + 1;}
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Java/">
                         <span class="tag">Java</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Python/">
+                        <span class="tag">Python</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -648,7 +664,14 @@ return pre + 1;}
                 <div class="control">
                     <a class="tags has-addons" href="/tags/c/">
                         <span class="tag">c</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/leetcode/">
+                        <span class="tag">leetcode</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -677,18 +700,18 @@ return pre + 1;}
         
         <article class="media">
             
-            <a href="/2019/05/03/DAY1/" class="media-left">
+            <a href="/2019/05/14/DAY1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="第六次周报">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY1">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T07:15:00.000Z">2019-05-03</time></div>
-                    <a href="/2019/05/03/DAY1/" class="has-link-black-ter is-size-6">第六次周报</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T07:15:00.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/DAY1/" class="has-link-black-ter is-size-6">DaY1</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/周报/">周报</a>
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
                 </div>
             </div>
@@ -842,6 +865,13 @@ return pre + 1;}
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Java/">
                         <span class="tag">Java</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Python/">
+                        <span class="tag">Python</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -849,7 +879,14 @@ return pre + 1;}
                 <div class="control">
                     <a class="tags has-addons" href="/tags/c/">
                         <span class="tag">c</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/leetcode/">
+                        <span class="tag">leetcode</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -870,7 +907,7 @@ return pre + 1;}
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="leetcode" height="28">
+                    <img src="/images/logo.svg" alt="从排序数组中删除重复项" height="28">
                 
                 </a>
                 <p class="is-size-7">

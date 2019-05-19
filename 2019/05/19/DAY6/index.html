@@ -2,19 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>归档 - LaiZT</title>
+<title>DaY6 - LaiZT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="LaiZT">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+    <meta name="description" content="1.100天Python DaY6 函数和模块的使用">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DaY6">
+<meta property="og:url" content="http://yoursite.com/2019/05/19/DAY6/index.html">
 <meta property="og:site_name" content="LaiZT">
+<meta property="og:description" content="1.100天Python DaY6 函数和模块的使用">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-05-19T09:10:48.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LaiZT">
+<meta name="twitter:title" content="DaY6">
+<meta name="twitter:description" content="1.100天Python DaY6 函数和模块的使用">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -89,7 +94,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="LaiZT" height="28">
+                <img src="/images/logo.svg" alt="DaY6" height="28">
             
             </a>
         </div>
@@ -134,185 +139,124 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
         
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="tag is-link">
-        2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time>
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-04-01T07:15:00.000Z">2019-04-01</time>
-                        <a href="/2019/04/01/4444/" class="has-link-black-ter is-size-6">第5次周报</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/周报/">周报</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                 </div>
-            </article>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 356 个字)
+                </span>
+                
+                
+            </div>
+        </div>
         
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                DaY6
+            
+        </h1>
+        <div class="content">
+            <p>1.100天Python</p>
+<p>DaY6</p>
+<p>函数和模块的使用<br><a id="more"></a><br>2.总结：</p>
+<ul>
+<li>函数的使用</li>
+</ul>
+<p>使用def关键字来定义函数</p>
+<ul>
+<li><p>函数的参数</p>
+<p>当遇到多个参数传入的情况 在参数名前面的*表示args是一个可变参数</p>
+</li>
+<li><p>用模块管理函数</p>
+<p>使用注明函数的来源，到达调用不同模块的函数</p>
+</li>
+</ul>
+<p>（先调用后导入模块的函数）</p>
+<ul>
+<li><p>变量作用域的问题</p>
+<pre><code>局部作用域
+函数中的定义的变量只在函数中有效
+其他域的同名变量无法影响到函数
+</code></pre></li>
+</ul>
+<ul>
+<li><p>使用global关键字来指示函数中的变量来自于全局作用域</p>
+</li>
+<li><p>我们应该尽量减少对全局变量的使用，因为全局变量的作用域和影响过于广泛，可能会发生意料之外的修改和使用，除此之外全局变量比局部变量拥有更长的生命周期，可能导致对象占用的内存长时间无法被垃圾回收。</p>
+</li>
+<li><p>说了那么多，其实结论很简单，从现在开始我们可以将Python代码按照下面的格式进行书写，这一点点的改进其实就是在我们理解了函数和作用域的基础上跨出的巨大的一步。</p>
+<pre><code>def main():
+#Todo: Add your code here
+pass
+</code></pre></li>
+</ul>
+<pre><code>if __name__ == &apos;__main__&apos;:
+main()
+</code></pre>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Python/">Python</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+                
+                
+                
+                
+                
+                
+                
         </div>
     </div>
 </div>
 
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <h3 class="tag is-link">
-        2018
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-12-25T07:15:00.000Z">2018-12-25</time>
-                        <a href="/2018/12/25/33333/" class="has-link-black-ter is-size-6">第三次周报</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/周报/">周报</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-12-25T05:15:00.000Z">2018-12-25</time>
-                        <a href="/2018/12/25/leetcode3/" class="has-link-black-ter is-size-6">leetcode3</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/解题思路/">解题思路</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-12-12T07:15:00.000Z">2018-12-12</time>
-                        <a href="/2018/12/12/222/" class="has-link-black-ter is-size-6">第二次周报</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/周报/">周报</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-12-12T05:15:00.000Z">2018-12-12</time>
-                        <a href="/2018/12/12/leetcode2/" class="has-link-black-ter is-size-6">leetcode2</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/解题思路/">解题思路</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-11-30T07:15:00.000Z">2018-11-30</time>
-                        <a href="/2018/11/30/1111/" class="has-link-black-ter is-size-6">第一次周报</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/周报/">周报</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2018-11-30T05:15:00.000Z">2018-11-30</time>
-                        <a href="/2018/11/30/leetcode1/" class="has-link-black-ter is-size-6">从排序数组中删除重复项</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/解题思路/">解题思路</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-        </div>
-    </div>
-</div>
 
-    
 
-    
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/archives/">上一页</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/05/19/Java3/">
+                <span class="level-item">Java学习DAY3</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/archives/page/3/">下一页</a>
-        </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/archives/">1</a></li>
-            
-            <li><a class="pagination-link is-current" href="/archives/page/2/">2</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
 </div>
+
+
 </div>
                 
 
@@ -948,7 +892,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="LaiZT" height="28">
+                    <img src="/images/logo.svg" alt="DaY6" height="28">
                 
                 </a>
                 <p class="is-size-7">

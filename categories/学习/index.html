@@ -152,6 +152,114 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 356 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/19/DAY6/">DaY6</a>
+            
+        </h1>
+        <div class="content">
+            <p>1.100天Python</p>
+<p>DaY6</p>
+<p>函数和模块的使用<br></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/19/DAY6/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 264 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/19/Java3/">Java学习DAY3</a>
+            
+        </h1>
+        <div class="content">
+            <p>1.学习：</p>
+<p>Java300集</p>
+<p>123-127<br></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/19/Java3/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-05-18T07:15:00.000Z">2019-05-18</time>
                 
                 <div class="level-item">
@@ -162,7 +270,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 640 个字)
+                    4 分钟 读完 (大约 641 个字)
                 </span>
                 
                 
@@ -177,101 +285,17 @@
         <div class="content">
             <p>1.学习：</p>
 <p>Java300集</p>
-<p>118-122</p>
-<p>2.总结</p>
-<pre><code>1. Date() 分配一个Date对象，并初始化此对象为系统当前的日期和时间，可以精确到毫秒)。
-
-2. Date(long date) 分配 Date 对象并初始化此对象，以表示自从标准基准时间(称为“历元(epoch)”，即 1970 年 1 月 1 日 00:00:00 GMT)以来的指定毫秒数。
-
-3. boolean after(Date when) 测试此日期是否在指定日期之后。
-
-4. booleanbefore(Date when) 测试此日期是否在指定日期之前。
-
-5. boolean equals(Object obj) 比较两个日期的相等性。
-
-6. long getTime() 返回自 1970 年 1 月 1 日 00:00:00 GMT 以来此 Date 对象表示的毫秒数。
-
-7. String toString() 把此 Date 对象转换为以下形式的 String：
-
-dow mon dd hh:mm:ss zzz yyyy 其中： dow 是一周中的某一天 (Sun、 Mon、Tue、Wed、 Thu、 Fri、 Sat)。
-</code></pre><p><img src="http://www.sxt.cn/360shop/Public/admin/UEditor/20170524/1495609352295957.png" alt=""></p>
-<pre><code>import java.text.ParseException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.Scanner;
-public class TestCalendar2 {
-public static void main(String[] args) throws ParseException {
-    System.out.println(&quot;请输入日期（格式为：2010-3-3）：&quot;);
-    Scanner scanner = new Scanner(System.in);
-    String dateString = scanner.nextLine(); // 2010-3-1
-    // 将输入的字符串转化成日期类
-    System.out.println(&quot;您刚刚输入的日期是：&quot; + dateString);
-    String[] str = dateString.split(&quot;-&quot;);
-    int year = Integer.parseInt(str[0]);
-    int month = new Integer(str[1]);
-    int day = new Integer(str[2]);
-    Calendar c = new GregorianCalendar(year, month - 1, day); // Month:0-11
-    // 大家自己补充另一种方式：将字符串通过SImpleDateFormat转化成Date对象，
-    //再将Date对象转化成日期类
-    // SimpleDateFormat sdfDateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
-    // Date date = sdfDateFormat.parse(dateString);
-    // Calendar c = new GregorianCalendar();
-    // c.setTime(date);
-    // int day = c.get(Calendar.DATE);
-    c.set(Calendar.DATE, 1);
-    int dow = c.get(Calendar.DAY_OF_WEEK); // week:1-7 日一二三四五六
-    System.out.println(&quot;日\t一\t二\t三\t四\t五\t六&quot;);
-    for (int i = 0; i &lt; dow - 1; i++) {
-        System.out.print(&quot;\t&quot;);
-    }
-    int maxDate = c.getActualMaximum(Calendar.DATE);
-    // System.out.println(&quot;maxDate:&quot;+maxDate);
-    for (int i = 1; i &lt;= maxDate; i++) {
-        StringBuilder sBuilder = new StringBuilder();
-        if (c.get(Calendar.DATE) == day) {
-            sBuilder.append(c.get(Calendar.DATE) + &quot;*\t&quot;);
-        } else {
-            sBuilder.append(c.get(Calendar.DATE) + &quot;\t&quot;);
-        }
-        System.out.print(sBuilder);
-        // System.out.print(c.get(Calendar.DATE)+
-        //                ((c.get(Calendar.DATE)==day)?&quot;*&quot;:&quot;&quot;)+&quot;\t&quot;);
-
-        if (c.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) {
-            System.out.print(&quot;\n&quot;);
-        }
-        c.add(Calendar.DATE, 1);
-    }
-}
-}
-</code></pre><p><img src="http://www.sxt.cn/360shop/Public/admin/UEditor/20170524/1495611382530451.png" alt=""></p>
-<p>Math类的常用方法：</p>
-<pre><code>1. abs 绝对值
-
-2. acos,asin,atan,cos,sin,tan 三角函数
-
-3. sqrt 平方根
-
-4. pow(double a, double b) a的b次幂
-
-5. max(double a, double b) 取大值
-
-6. min(double a, double b) 取小值
-
-7. ceil(double a) 大于a的最小整数
-
-8. floor(double a) 小于a的最大整数
-
-9. random() 返回 0.0 到 1.0 的随机数
-
-10. long round(double a) double型的数据a转换为long型(四舍五入)
-
-11. toDegrees(double angrad) 弧度-&gt;角度
-
-12. toRadians(double angdeg) 角度-&gt;弧度
-</code></pre>
+<p>118-122<br></p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/18/Java2/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -300,7 +324,7 @@ public static void main(String[] args) throws ParseException {
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 143 个字)
+                    1 分钟 读完 (大约 144 个字)
                 </span>
                 
                 
@@ -315,170 +339,18 @@ public static void main(String[] args) throws ParseException {
         <div class="content">
             <p>1.100天Python</p>
 <p>DaY5</p>
-<p>总结和练习</p>
-<p>2.总结：</p>
-<p>水仙花数</p>
-<pre><code>for i in range(100,1000):
-
-  s=str(i)
-
-  if int(s[0])**3+int(s[1])**3+int(s[2])**3==i:
-
-     print(i)
-
-这个方法真的厉害QAQ
-</code></pre><p>craps赌博游戏</p>
-<pre><code>from random import randint
-face1=randint(1,6)
-face2=randint(1,6)
-first_point=face1+face2
-print(&apos;玩家摇出了：%d点&apos;% first_point)
-go_on=False
-if first_point==7 or first_point==11:
-   print(&apos;玩家胜&apos;)
-elif first_point==2 or first_point==3 or     first_point==12:
-   print(&apos;庄家胜&apos;)
-else:
-go_on=True
-while(go_on):
-    face1=randint(1,6)
-    face2=randint(1,6)
-    current_point=face1+face2
-    print(&apos;玩家摇出了：%d点&apos;% current_point)
-    if current_point==7:
-        go_on=False
-        print(&apos;庄家胜&apos;)
-    elif current_point==first_point:
-        go_on=False
-        print(&apos;玩家胜&apos;)
-</code></pre>
+<p>总结和练习<br></p>
         </div>
         
         
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time>
-                
+        <div class="level is-mobile">
+            <div class="level-start">
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                <a class="button is-size-7 is-light" href="/2019/05/18/DAY5/#more">阅读更多</a>
                 </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 666 个字)
-                </span>
-                
-                
             </div>
         </div>
         
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/05/17/Java1/">Java学习DAY1</a>
-            
-        </h1>
-        <div class="content">
-            <p>1.学习：</p>
-<p>Java300集</p>
-<p>113-117</p>
-<p>2.总结</p>
-<p>基本数据类型与之对应的包装类</p>
-<p>byte——————Byte</p>
-<p>boolean————-Boolean</p>
-<p>short—————–Short</p>
-<p>char——————Character</p>
-<p>int———————Integer</p>
-<p>long——————-Long</p>
-<p>float——————-Float</p>
-<p>double—————-Double</p>
-<pre><code>// Integer对象转化成int
-int a = int1.intValue();
-// 字符串转化成Integer对象
-Integer int3 = Integer.parseInt(&quot;334&quot;);
-Integer int4 = new Integer(&quot;999&quot;);
-// Integer对象转化成字符串
-String str1 = int3.toString();
-// 一些常见int类型相关的常量
-System.out.println(&quot;int能表示的最大整数：&quot; + Integer.MAX_VALUE); 
-</code></pre><ul>
-<li><p>包装类的缓存问题</p>
-<pre><code>public class Test3 {
-public static void main(String[] args) {
-//缓存[-128,127]之间的数字，实际就是系统初始化的时候，创建了[-128,127]之间的一个缓存数组。
-//当我们调用valueOf()的时候，首先检查时候在[-128,127]之间，如果在这个范围则直接使用这个
-//如果不在免责创建新的Integer对象
-Integer in1 = -128;
-Integer in2 = -128;
-System.out.println(in1 == in2);//true 因为123在缓存范围内
-System.out.println(in1.equals(in2));//true
-Integer in3 = 1234;
-Integer in4 = 1234;
-System.out.println(in3 == in4);//false 因为1234不缓存范围内
-System.out.println(in3.equals(in4));//true
-     }
-}
-</code></pre></li>
-</ul>
-<p>　1）对于==，如果作用于基本数据类型的变量，则直接比较其存储的 “值”是否相等；</p>
-<p>　　 如果作用于引用类型的变量，则比较的是所指向的对象的地址</p>
-<p>　2）对于equals方法，注意：equals方法不能作用于基本数据类型的变量</p>
-<p>　　 如果没有对equals方法进行重写，则比较的是引用类型的变量所指向的对象的地址；</p>
-<p>　　 诸如String、Date等类对equals方法进行了重写的话，比较的是所指向的对象的内容。</p>
-<p>(转自<a href="https://www.cnblogs.com/dolphin0520/p/3592500.html" target="_blank" rel="noopener">https://www.cnblogs.com/dolphin0520/p/3592500.html</a>)</p>
-<pre><code>  public class Test {
-  public static void main(String[] args) {
-  /**使用String进行字符串的拼接*/
-  String str8 = &quot;&quot;;
-  //本质上使用StringBuilder拼接, 但是每次循环都会生成一个StringBuilder对象
-  long num1 = Runtime.getRuntime().freeMemory();//获取系统剩余内存空间
-  long time1 = System.currentTimeMillis();//获取系统的当前时间
-  for (int i = 0; i &lt; 5000; i++) {
-      str8 = str8 + i;//相当于产生了10000个对象
-  }
-  long num2 = Runtime.getRuntime().freeMemory();
-  long time2 = System.currentTimeMillis();
-  System.out.println(&quot;String占用内存 : &quot; + (num1 - num2));
-  System.out.println(&quot;String占用时间 : &quot; + (time2 - time1));
-  /**使用StringBuilder进行字符串的拼接*/
-  StringBuilder sb1 = new StringBuilder(&quot;&quot;);
-  long num3 = Runtime.getRuntime().freeMemory();
-  long time3 = System.currentTimeMillis();
-  for (int i = 0; i &lt; 5000; i++) {
-      sb1.append(i);
-  }
-  long num4 = Runtime.getRuntime().freeMemory();
-  long time4 = System.currentTimeMillis();
-  System.out.println(&quot;StringBuilder占用内存 : &quot; + (num3 - num4));
-  System.out.println(&quot;StringBuilder占用时间 : &quot; + (time4 - time3));
-  }
-}
-
-1. String：不可变字符序列。
-
-2. StringBuffer：可变字符序列，并且线程安全，但是效率低。
-
-3. StringBuilder：可变字符序列，线程不安全，但是效率高(一般用它)。
-</code></pre>
-        </div>
-        
-        
         
     </div>
 </div>
@@ -506,7 +378,7 @@ System.out.println(in3.equals(in4));//true
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 81 个字)
+                    几秒 读完 (大约 82 个字)
                 </span>
                 
                 
@@ -521,23 +393,71 @@ System.out.println(in3.equals(in4));//true
         <div class="content">
             <p>1.100天Python</p>
 <p>DaY4</p>
-<p>循环结构</p>
-<p>2.总结：</p>
-<ul>
-<li><p>for-in</p>
-</li>
-<li><p>while</p>
-</li>
-<li><p>同样时用缩进来控制的</p>
-</li>
-<li><p>range(101)可以产生一个0到100的整数序列。</p>
-<p>  range(1, 100)可以产生一个1到99的整数序列。</p>
-</li>
-</ul>
-<pre><code>range(1, 100, 2)可以产生一个1到99的奇数序列，其中的2是步长，即数值序列的增量。
-</code></pre>
+<p>循环结构<br></p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/17/DAY4/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 667 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/17/Java1/">Java学习DAY1</a>
+            
+        </h1>
+        <div class="content">
+            <p>1.学习：</p>
+<p>Java300集</p>
+<p>113-117<br></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/17/Java1/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -566,7 +486,7 @@ System.out.println(in3.equals(in4));//true
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 198 个字)
+                    1 分钟 读完 (大约 199 个字)
                 </span>
                 
                 
@@ -581,20 +501,17 @@ System.out.println(in3.equals(in4));//true
         <div class="content">
             <p>1.100天Python</p>
 <p>DaY3</p>
-<p>分支结构</p>
-<p>2.总结：</p>
-<ul>
-<li>在Python中，要构造分支结构可以使用if、elif和else关键字</li>
-</ul>
-<ul>
-<li><p>Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果if条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。</p>
-</li>
-<li><p>嵌套结构的嵌套层次多了之后会严重的影响代码的可读性，如果可以使用扁平化的结构就不要去用嵌套</p>
-</li>
-</ul>
-
+<p>分支结构<br></p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/16/DAY3/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -623,7 +540,7 @@ System.out.println(in3.equals(in4));//true
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 88 个字)
+                    几秒 读完 (大约 89 个字)
                 </span>
                 
                 
@@ -638,21 +555,17 @@ System.out.println(in3.equals(in4));//true
         <div class="content">
             <p>1.100天Python</p>
 <p>DaY2</p>
-<p>语言元素</p>
-<p>2.总结：</p>
-<ul>
-<li><p>python数据类型简单，分为整形（整数）、浮点型（带小数）、字节型（字符）、布尔型（true or false）、复数型（3+5j）。</p>
-</li>
-<li><p>变量命名大体相同。</p>
-</li>
-<li><p>print(‘  ‘%(a,b,c))</p>
-</li>
-<li><p>储存常量可以无需定义，直接赋值</p>
-</li>
-</ul>
-
+<p>语言元素<br></p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/15/DAY2/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -681,7 +594,7 @@ System.out.println(in3.equals(in4));//true
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 57 个字)
+                    几秒 读完 (大约 58 个字)
                 </span>
                 
                 
@@ -696,22 +609,17 @@ System.out.println(in3.equals(in4));//true
         <div class="content">
             <p>1.100天Python</p>
 <p>DaY1</p>
-<p>初识Python</p>
-<p>2.总结：</p>
-<ul>
-<li><p>安装环境</p>
-</li>
-<li><p>了解一些python编译器</p>
-</li>
-<li><p>python的注释规则</p>
-<pre><code> 单行注释以#和空格开头的部分
-
-多行注释 - 三个引号开头，三个引号结尾
-</code></pre></li>
-</ul>
-
+<p>初识Python<br></p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/05/14/DAY1/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -767,7 +675,7 @@ System.out.println(in3.equals(in4));//true
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        17
                     </p>
                 </div>
             </div>
@@ -898,7 +806,7 @@ System.out.println(in3.equals(in4));//true
                 <span class="level-item">学习</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">9</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/解题思路/">
@@ -934,6 +842,44 @@ System.out.println(in3.equals(in4));//true
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/19/DAY6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/19/Java3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/Java3/" class="has-link-black-ter is-size-6">Java学习DAY3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -975,25 +921,6 @@ System.out.println(in3.equals(in4));//true
         
         <article class="media">
             
-            <a href="/2019/05/17/DAY4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time></div>
-                    <a href="/2019/05/17/DAY4/" class="has-link-black-ter is-size-6">DaY4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/05/17/Java1/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY1">
@@ -1004,25 +931,6 @@ System.out.println(in3.equals(in4));//true
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time></div>
                     <a href="/2019/05/17/Java1/" class="has-link-black-ter is-size-6">Java学习DAY1</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/DAY3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T07:15:00.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/DAY3/" class="has-link-black-ter is-size-6">DaY3</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
@@ -1048,7 +956,7 @@ System.out.println(in3.equals(in4));//true
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">8</span>
+                    <span class="level-item tag">10</span>
                 </span>
             </a>
         </li>
@@ -1102,14 +1010,14 @@ System.out.println(in3.equals(in4));//true
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Java/">
                         <span class="tag">Java</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
@@ -1152,6 +1060,44 @@ System.out.println(in3.equals(in4));//true
         
         <article class="media">
             
+            <a href="/2019/05/19/DAY6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/19/Java3/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY3">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/Java3/" class="has-link-black-ter is-size-6">Java学习DAY3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/05/18/DAY5/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY5">
@@ -1190,25 +1136,6 @@ System.out.println(in3.equals(in4));//true
         
         <article class="media">
             
-            <a href="/2019/05/17/DAY4/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY4">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time></div>
-                    <a href="/2019/05/17/DAY4/" class="has-link-black-ter is-size-6">DaY4</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/05/17/Java1/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY1">
@@ -1219,25 +1146,6 @@ System.out.println(in3.equals(in4));//true
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-17T07:15:00.000Z">2019-05-17</time></div>
                     <a href="/2019/05/17/Java1/" class="has-link-black-ter is-size-6">Java学习DAY1</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/16/DAY3/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY3">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-16T07:15:00.000Z">2019-05-16</time></div>
-                    <a href="/2019/05/16/DAY3/" class="has-link-black-ter is-size-6">DaY3</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
@@ -1263,7 +1171,7 @@ System.out.println(in3.equals(in4));//true
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">8</span>
+                    <span class="level-item tag">10</span>
                 </span>
             </a>
         </li>
@@ -1317,14 +1225,14 @@ System.out.println(in3.equals(in4));//true
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Java/">
                         <span class="tag">Java</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Python/">
                         <span class="tag">Python</span>
-                        <span class="tag is-grey">5</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 

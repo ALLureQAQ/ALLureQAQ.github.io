@@ -7,19 +7,19 @@
 
 
 
-    <meta name="description" content="1.学习： Java300集 131-133">
+    <meta name="description" content="1.学习： Java300集 迭代器iterator and 泛型">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java学习DAY4">
 <meta property="og:url" content="http://yoursite.com/2019/06/18/Java4/index.html">
 <meta property="og:site_name" content="LaiZT">
-<meta property="og:description" content="1.学习： Java300集 131-133">
+<meta property="og:description" content="1.学习： Java300集 迭代器iterator and 泛型">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-06-18T14:37:00.710Z">
+<meta property="og:updated_time" content="2019-06-19T16:12:43.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习DAY4">
-<meta name="twitter:description" content="1.学习： Java300集 131-133">
+<meta name="twitter:description" content="1.学习： Java300集 迭代器iterator and 泛型">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 173 个字)
+                    2 分钟 读完 (大约 276 个字)
                 </span>
                 
                 
@@ -170,25 +170,15 @@
         <div class="content">
             <p>1.学习：</p>
 <p>Java300集</p>
-<p>131-133<br><a id="more"></a><br>2.总结</p>
-<pre><code>Collection接口的两个子接口是List、Set接口。
+<p>迭代器<br>iterator and 泛型<br><a id="more"></a><br>2.总结</p>
+<p>迭代：</p>
+<p>是重复反馈过程的活动，其目的通常是为了逼近所需目标或结果。每一次对过程的重复称为一次“迭代”，而每一次迭代得到的结果会作为下一次迭代的初始值。</p>
+<p>重复执行一系列运算步骤，从前面的量依次求出后面的量的过程。此过程的每一次结果，都是由对前一次所得结果施行相同的运算步骤得到的。例如利用迭代法求某一数学问题的解。<br>对计算机特定程序中需要反复执行的子程序(一组指令)，进行一次重复，即重复执行程序中的循环，直到满足某条件为止，亦称为迭代。</p>
+<p>类似链表</p>
+<p>泛型：</p>
+<p>保证了类型安全</p>
+<p>当添加的不是对应的对象时，编译器会发现并报错。所以他保证了类型安全。</p>
 
-List中的元素有顺序，可重复。常用的实现类有ArrayList、LinkedList和 vector。
-
-1.ArrayList特点：查询效率高，增删效率低，线程不安全。
-
-2.LinkedList特点：查询效率低，增删效率高，线程不安全。
-
-3.Vector特点：线程安全,效率低
-
-如何选用ArrayList、LinkedList、Vector?
-
-1. 需要线程安全时，用Vector。
-
-2. 不存在线程安全问题时，并且查找较多用ArrayList(一般使用它)。
-
-3. 不存在线程安全问题时，增加或删除元素较多用LinkedList。
-</code></pre>
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -511,25 +501,6 @@ List中的元素有顺序，可重复。常用的实现类有ArrayList、LinkedL
         
         <article class="media">
             
-            <a href="/2019/05/19/DAY6/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
-                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/05/19/Java3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY3">
@@ -540,6 +511,25 @@ List中的元素有顺序，可重复。常用的实现类有ArrayList、LinkedL
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
                     <a href="/2019/05/19/Java3/" class="has-link-black-ter is-size-6">Java学习DAY3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/19/DAY6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
@@ -737,25 +727,6 @@ List中的元素有顺序，可重复。常用的实现类有ArrayList、LinkedL
         
         <article class="media">
             
-            <a href="/2019/05/19/DAY6/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
-                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/05/19/Java3/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Java学习DAY3">
@@ -766,6 +737,25 @@ List中的元素有顺序，可重复。常用的实现类有ArrayList、LinkedL
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
                     <a href="/2019/05/19/Java3/" class="has-link-black-ter is-size-6">Java学习DAY3</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/学习/">学习</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/19/DAY6/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="DaY6">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-19T07:15:00.000Z">2019-05-19</time></div>
+                    <a href="/2019/05/19/DAY6/" class="has-link-black-ter is-size-6">DaY6</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/学习/">学习</a>
                     </p>
